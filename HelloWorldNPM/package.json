@@ -1,6 +1,6 @@
 {
   "name": "@tenonhq/hello-world-npm",
-  "version": "0.0.17",
+  "version": "0.0.19",
   "private": false,
   "description": "./README.md",
   "keywords": [
@@ -15,6 +15,7 @@
   "module": "src/index.js",
   "dependencies": {
     "@servicenow/behavior-focus": "^19.8.2-ecd",
+    "@servicenow/behavior-rtl": "19.8.2-ecd",
     "@servicenow/cli-archetype": "22.0.0",
     "@servicenow/cli-component-archetype": "22.0.0",
     "@servicenow/library-enhanced-element": "^19.8.2-ecd",
@@ -26,7 +27,9 @@
     "@servicenow/sass-kit": "quebec",
     "@servicenow/sass-theme": "quebec",
     "@servicenow/ui-core": "quebec",
-    "@servicenow/ui-renderer-snabbdom": "quebec"
+    "@servicenow/ui-renderer-snabbdom": "quebec",
+    "@servicenow/sass-utility": "19.8.2-ecd",
+    "@servicenow/tool-enhanced-component-archetype": "19.8.2-ecd"
   },
   "devDependencies": {
     "@servicenow/cli-archetype-dev": "22.0.0",
@@ -44,7 +47,10 @@
     "prettier-eslint-cli": "^7.1.0",
     "prettier-stylelint": "^0.4.2",
     "stylelint": "^14.16.1",
-    "stylelint-config-standard-scss": "^6.1.0"
+    "stylelint-config-standard-scss": "^6.1.0",
+    "@servicenow/library-enhanced-test": "19.8.2-ecd",
+    "@servicenow/tool-enhanced-component-archetype-dev": "19.8.2-ecd",
+    "builder": "4.0.0"
   },
   "scripts": {
     "start": "snc ui-component develop --open",
@@ -54,8 +60,7 @@
   },
   "main": "src/index.js",
   "directories": {
-    "example": "example",
-    "src": "src"
+    "example": "example"
   },
   "repository": {
     "type": "git",
@@ -66,5 +71,19 @@
   "bugs": {
     "url": "https://github.com/Dman89/example/issues"
   },
-  "homepage": "https://github.com/Dman89/example#readme"
+  "homepage": "https://github.com/Dman89/example#readme",
+  "files": [
+    ".builderrc",
+    "*.scss",
+    "drivers",
+    "generators",
+    "index.js",
+    "lib",
+    "now-cli.json",
+    "now-ui.json",
+    "prepare.js",
+    "src",
+    "!src/test",
+    "!src/test-visual"
+  ]
 }

@@ -15,16 +15,27 @@
 	},
 	"module": "src/index.js",
 	"dependencies": {
-		"@servicenow/ui-core": "quebec",
-		"@servicenow/ui-renderer-snabbdom": "quebec",
 		"@servicenow/cli-archetype": "24.0.0",
 		"@servicenow/cli-component-archetype": "24.0.0",
-		"@servicenow/sass-theme": "quebec",
+		"@servicenow/library-translate": "quebec",
+		"@servicenow/now-button": "^19.8.2-ecd",
 		"@servicenow/sass-kit": "quebec",
-		"@servicenow/library-translate": "quebec"
+		"@servicenow/sass-theme": "quebec",
+		"@servicenow/ui-core": "quebec",
+		"@servicenow/ui-renderer-snabbdom": "quebec",
+		"@tenonhq/hello-world-npm": "0.0.18",
+		"@tenonhq/helloworldfn": "^1.0.1"
 	},
 	"devDependencies": {
 		"@servicenow/cli-archetype-dev": "24.0.0",
 		"@servicenow/cli-component-archetype-dev": "24.0.0"
+	},
+	"scripts": {
+		"merge": "git pull && git merge origin/main",
+		"start": "snc ui-component develop --open",
+		"dev": "npm run develop",
+		"develop": "npm run kill && echo 'Successfully Killed Port'; npm start",
+		"deploy": "snc ui-component deploy --force",
+		"kill": "npx kill-port 3000; npx kill-port 8081"
 	}
 }

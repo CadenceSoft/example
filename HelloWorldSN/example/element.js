@@ -1,8 +1,8 @@
-import '../src/hello-world';
+import '../src/cadso-hello-world';
 
 const el = document.createElement('DIV');
 document.body.appendChild(el);
 
 el.innerHTML = `		
-<hello-world></hello-world>
+<cadso-hello-world></cadso-hello-world>
 `;

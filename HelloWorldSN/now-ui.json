@@ -1,6 +1,6 @@
 {
 	"components": {
-	    "hello-world": {
+	    "cadso-hello-world": {
 	        "innerComponents": [],
 			"uiBuilder": {
 				"associatedTypes": ["global.core", "global.landing-page"],

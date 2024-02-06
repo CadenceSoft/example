@@ -1,0 +1,96 @@
+{
+  "_from": "@servicenow/now-button",
+  "_id": "@servicenow/now-button@19.8.2-ecd",
+  "_inBundle": false,
+  "_integrity": "sha512-F7zap/XryK3FQf8iKlrkgnHoovgnySpucdEbe47c6Tuh+K6LCV86Cn0ttOCUAlrEZawhcGhUrHLHhc/S79cSmA==",
+  "_location": "/@servicenow/now-button",
+  "_phantomChildren": {},
+  "_requested": {
+    "type": "tag",
+    "registry": true,
+    "raw": "@servicenow/now-button",
+    "name": "@servicenow/now-button",
+    "escapedName": "@servicenow%2fnow-button",
+    "scope": "@servicenow",
+    "rawSpec": "",
+    "saveSpec": null,
+    "fetchSpec": "latest"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/@servicenow/now-button/-/now-button-19.8.2-ecd.tgz",
+  "_shasum": "fe76a87b9b60c35c7f707c34398c320648632470",
+  "_spec": "@servicenow/now-button",
+  "_where": "/Users/dman89/Documents/Tenon/Development/example/HelloWorldSN",
+  "bundleDependencies": false,
+  "dependencies": {
+    "@servicenow/behavior-focus": "19.8.2-ecd",
+    "@servicenow/behavior-rtl": "19.8.2-ecd",
+    "@servicenow/cli-archetype": "quebec",
+    "@servicenow/cli-component-archetype": "quebec",
+    "@servicenow/library-enhanced-element": "19.8.2-ecd",
+    "@servicenow/library-enhanced-utils": "19.8.2-ecd",
+    "@servicenow/library-schemas": "19.8.2-ecd",
+    "@servicenow/now-icon": "19.8.2-ecd",
+    "@servicenow/now-tooltip": "19.8.2-ecd",
+    "@servicenow/sass-kit": "19.8.2-ecd",
+    "@servicenow/sass-theme": "19.8.2-ecd",
+    "@servicenow/sass-utility": "19.8.2-ecd",
+    "@servicenow/tool-enhanced-component-archetype": "19.8.2-ecd",
+    "@servicenow/ui-core": "quebec",
+    "@servicenow/ui-renderer-snabbdom": "quebec",
+    "@servicenow/ui-testing-helpers": "quebec"
+  },
+  "deprecated": false,
+  "description": "Simple buttons",
+  "devDependencies": {
+    "@servicenow/cli-archetype-dev": "quebec",
+    "@servicenow/cli-component-archetype-dev": "quebec",
+    "@servicenow/library-enhanced-test": "19.8.2-ecd",
+    "@servicenow/tool-enhanced-component-archetype-dev": "19.8.2-ecd",
+    "@servicenow/vert": "0.3.4",
+    "builder": "4.0.0",
+    "sn-component-prototyper": "19.1.4"
+  },
+  "engines": {
+    "node": ">=8.6.0",
+    "npm": ">=5.3.0"
+  },
+  "files": [
+    ".builderrc",
+    "*.scss",
+    "drivers",
+    "generators",
+    "index.js",
+    "lib",
+    "now-cli.json",
+    "now-ui.json",
+    "prepare.js",
+    "src",
+    "!src/test",
+    "!src/test-visual"
+  ],
+  "gitHead": "c6186923a876eb65d061cc3faceffd81e2e48b49",
+  "keywords": [
+    "component",
+    "ServiceNow",
+    "now-button"
+  ],
+  "license": "MIT",
+  "main": "dist/@servicenow/now-button.js",
+  "meta": {
+    "release": "N"
+  },
+  "module": "src/index.js",
+  "name": "@servicenow/now-button",
+  "private": false,
+  "scripts": {
+    "build": "npm run prepare && builder run build:app:dynamic",
+    "prepare": "[ -f prepare.js ] && node prepare.js || exit 0",
+    "test": "builder run test:functional",
+    "watch:playground": "tectonic run dev --entry=./prototypes"
+  },
+  "version": "19.8.2-ecd"
+}

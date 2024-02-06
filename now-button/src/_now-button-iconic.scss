@@ -1,0 +1,207 @@
+// ServiceNow Design System
+
+// NOW Button Iconic
+
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.now-button-iconic {
+	@include now-mx-button;
+	margin: 0;
+	border-style: solid;
+	border-radius: $now-button--iconic--border-radius;
+	padding: 0;
+	@include now-mx-focus-ring;
+
+	// <now-button-iconic size="sm|md|lg">
+
+	&.-sm {
+		@include now-mx-button-iconic-sm;
+	}
+
+	&.-md {
+		@include now-mx-button-iconic-md;
+	}
+
+	&.-lg {
+		@include now-mx-button-iconic-lg;
+	}
+
+	// <now-button-iconic variant="primary|secondary|tertiary">
+
+	&.-primary {
+		@include now-mx-button-primary;
+	}
+
+	&.-secondary {
+		@include now-mx-button-secondary;
+	}
+
+	&.-tertiary {
+		@include now-mx-button-tertiary;
+	}
+
+	// <now-button-iconic variant="primary|secondary|tertiary" bare>
+
+	&.is-bare {
+		@include now-mx-button-is-bare;
+
+		&.-primary {
+			@include now-mx-button-bare-primary;
+
+			&:hover {
+				background-color: RGBA(
+					$now-button--bare_primary--background-color--hover,
+					$now-global-opacity--least
+				);
+			}
+
+			&:active {
+				background-color: RGBA(
+					$now-button--bare_primary--background-color--active,
+					$now-global-opacity--less
+				);
+			}
+
+			&.high-contrast {
+				@include now-mx-button-bare-primary-high-contrast;
+
+				&:hover {
+					background-color: RGBA(
+						$now-button--primary_high-contrast--background-color--hover,
+						$now-global-opacity--least
+					);
+				}
+
+				&:active {
+					background-color: RGBA(
+						$now-button--primary_high-contrast--background-color--active,
+						$now-global-opacity--less
+					);
+				}
+			}
+		}
+
+		&.-secondary {
+			@include now-mx-button-bare-secondary;
+
+			&:hover {
+				background-color: RGBA(
+					$now-button--bare_secondary--background-color--hover,
+					$now-global-opacity--least
+				);
+			}
+
+			&:active {
+				background-color: RGBA(
+					$now-button--bare_secondary--background-color--active,
+					$now-global-opacity--less
+				);
+			}
+
+			&.high-contrast {
+				@include now-mx-button-bare-secondary-high-contrast;
+
+				&:hover {
+					background-color: RGBA(
+						$now-button--secondary_high-contrast--background-color--hover,
+						$now-global-opacity--least
+					);
+				}
+
+				&:active {
+					background-color: RGBA(
+						$now-button--secondary_high-contrast--background-color--active,
+						$now-global-opacity--less
+					);
+				}
+			}
+		}
+
+		&.-tertiary {
+			color: RGBA(
+				$now-button--tertiary--color,
+				$now-button--tertiary--color-alpha
+			);
+
+			&:hover {
+				color: RGBA(
+					$now-button--tertiary--color--hover,
+					$now-button--tertiary--color-alpha--hover
+				);
+				background-color: RGBA(
+					$now-button--bare_tertiary--background-color--hover,
+					$now-button--bare_tertiary--background-color-alpha--hover
+				);
+			}
+
+			&:active {
+				color: RGBA(
+					$now-button--tertiary--color--active,
+					$now-button--tertiary--color-alpha--active
+				);
+				background-color: RGBA(
+					$now-button--bare_tertiary--background-color--active,
+					$now-button--bare_tertiary--background-color-alpha--active
+				);
+			}
+
+			&.high-contrast {
+				color: RGBA(
+					$now-button--tertiary_high-contrast--color,
+					$now-button--tertiary_high-contrast--color-alpha
+				);
+
+				&:hover {
+					color: RGBA(
+						$now-button--tertiary_high-contrast--color--hover,
+						$now-button--tertiary_high-contrast--color-alpha--hover
+					);
+					background-color: RGBA(
+						$now-button--tertiary_high-contrast--background-color--hover,
+						$now-button--tertiary_high-contrast--background-color-alpha--hover
+					);
+				}
+
+				&:active {
+					color: RGBA(
+						$now-button--tertiary_high-contrast--color--active,
+						$now-button--tertiary_high-contrast--color-alpha--active
+					);
+					background-color: RGBA(
+						$now-button--tertiary_high-contrast--background-color--active,
+						$now-button--tertiary_high-contrast--background-color-alpha--active
+					);
+				}
+			}
+		}
+	}
+
+	// <now-button-iconic disabled>
+
+	&.is-disabled {
+		border-width: $now-button--border-width--disabled;
+	}
+
+	&.is-disabled,
+	&.is-disabled:hover {
+		@include now-mx-button-is-disabled;
+
+		&.is-bare {
+			@include now-mx-button-is-bare-is-disabled;
+		}
+	}
+
+	// <now-button-iconic hide-padding>
+
+	&.hide-padding {
+		width: initial;
+		height: initial;
+		border-width: 0;
+		border-radius: 0;
+	}
+} // end .now-button-iconic

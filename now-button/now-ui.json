@@ -1,0 +1,1518 @@
+{
+	"components": {
+		"now-button": {
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core"
+				],
+				"category": "primitives",
+				"description": "Button with a background color",
+				"icon": "button",
+				"label": "Button"
+			},
+			"properties": [
+				{
+					"defaultValue": "secondary",
+					"description": "Sets the button style",
+					"fieldType": "choice",
+					"label": "Variant",
+					"managed": false,
+					"name": "variant",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Primary",
+								"value": "primary"
+							},
+							{
+								"label": "Secondary",
+								"value": "secondary"
+							},
+							{
+								"label": "Tertiary",
+								"value": "tertiary"
+							},
+							{
+								"label": "Positive Primary",
+								"value": "primary-positive"
+							},
+							{
+								"label": "Positive Secondary",
+								"value": "secondary-positive"
+							},
+							{
+								"label": "Negative Primary",
+								"value": "primary-negative"
+							},
+							{
+								"label": "Negative Secondary",
+								"value": "secondary-negative"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"primary",
+								"primary-positive",
+								"primary-negative",
+								"secondary",
+								"secondary-positive",
+								"secondary-negative",
+								"tertiary"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "md",
+					"description": "Sets the button size",
+					"fieldType": "choice",
+					"label": "Size",
+					"managed": false,
+					"name": "size",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Small",
+								"value": "sm"
+							},
+							{
+								"label": "Medium",
+								"value": "md"
+							},
+							{
+								"label": "Large",
+								"value": "lg"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"sm",
+								"md",
+								"lg"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "Button",
+					"description": "Text displayed inside the button",
+					"fieldType": "string",
+					"label": "Label",
+					"managed": false,
+					"name": "label",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"description": "Defines icon displayed at the start of the button",
+					"fieldType": "icon",
+					"label": "Icon",
+					"managed": false,
+					"name": "icon",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "When true, disables user click interactions",
+					"fieldType": "boolean",
+					"label": "Disabled",
+					"managed": false,
+					"name": "disabled",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "Enter a label",
+					"description": "Text shown inside the tooltip",
+					"fieldType": "string",
+					"label": "Tooltip label",
+					"managed": false,
+					"name": "tooltipContent",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": "{}",
+					"description": "Configures ARIA properties",
+					"fieldType": "json",
+					"label": "ARIA properties",
+					"managed": false,
+					"name": "configAria",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"oneOf": [
+								{
+									"type": "object",
+									"properties": {
+										"button": {
+											"type": "object",
+											"properties": {
+												"aria-braillelabel": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-brailleroledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-colindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-description": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-label": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-placeholder": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-roledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-rowindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-valuetext": {
+													"type": "string",
+													"translatable": true
+												}
+											},
+											"patternProperties": {
+												"^aria-": {
+													"type": "string"
+												}
+											},
+											"additionalProperties": false
+										}
+									},
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"aria-braillelabel": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-brailleroledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-colindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-description": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-label": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-placeholder": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-roledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-rowindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-valuetext": {
+											"type": "string",
+											"translatable": true
+										}
+									},
+									"patternProperties": {
+										"^aria-": {
+											"type": "string"
+										}
+									},
+									"additionalProperties": false
+								}
+							]
+						}
+					}
+				}
+			],
+			"actions": [
+				{
+					"description": "Dispatched when the button is clicked",
+					"label": "Button clicked",
+					"name": "NOW_BUTTON#CLICKED",
+					"payload": []
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": [
+				"now-icon",
+				"now-tooltip"
+			]
+		},
+		"now-button-bare": {
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core"
+				],
+				"category": "primitives",
+				"description": "Button with no background color or border",
+				"icon": "button-bare",
+				"label": "Button bare"
+			},
+			"properties": [
+				{
+					"defaultValue": "primary",
+					"description": "Sets the button style",
+					"fieldType": "choice",
+					"label": "Variant",
+					"managed": false,
+					"name": "variant",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Primary",
+								"value": "primary"
+							},
+							{
+								"label": "Secondary",
+								"value": "secondary"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"primary",
+								"secondary"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "md",
+					"description": "Sets the button size",
+					"fieldType": "choice",
+					"label": "Size",
+					"managed": false,
+					"name": "size",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Small",
+								"value": "sm"
+							},
+							{
+								"label": "Medium",
+								"value": "md"
+							},
+							{
+								"label": "Large",
+								"value": "lg"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"sm",
+								"md",
+								"lg"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "Button",
+					"description": "Text displayed inside the button",
+					"fieldType": "string",
+					"label": "Label",
+					"managed": false,
+					"name": "label",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"description": "Displays an icon at the start of the button",
+					"fieldType": "icon",
+					"label": "Icon left of label",
+					"managed": false,
+					"name": "iconStart",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"description": "Displays an icon at the end of the button",
+					"fieldType": "icon",
+					"label": "Icon right of label",
+					"managed": false,
+					"name": "iconEnd",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Disables user click interactions",
+					"fieldType": "boolean",
+					"label": "Disabled",
+					"managed": false,
+					"name": "disabled",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "By default, the button's height is based on the size. Turn on to reduce the button height. This sets the button height to the size of the text. Buttons with this property do not align vertically with other button types",
+					"fieldType": "boolean",
+					"label": "Hide padding",
+					"managed": false,
+					"name": "hidePadding",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Increases the accessibility contrast ratio of the icon and label when displayed on darker backgrounds",
+					"fieldType": "boolean",
+					"label": "High contrast",
+					"managed": false,
+					"name": "highContrast",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "{}",
+					"description": "ARIA properties that are set on the inner html. See https://www.w3.org/TR/wai-aria-1.1/#button for properties and accepted values",
+					"fieldType": "json",
+					"label": "ARIA properties",
+					"managed": false,
+					"name": "configAria",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"oneOf": [
+								{
+									"type": "object",
+									"properties": {
+										"button": {
+											"type": "object",
+											"properties": {
+												"aria-braillelabel": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-brailleroledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-colindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-description": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-label": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-placeholder": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-roledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-rowindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-valuetext": {
+													"type": "string",
+													"translatable": true
+												}
+											},
+											"patternProperties": {
+												"^aria-": {
+													"type": "string"
+												}
+											},
+											"additionalProperties": false
+										}
+									},
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"aria-braillelabel": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-brailleroledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-colindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-description": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-label": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-placeholder": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-roledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-rowindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-valuetext": {
+											"type": "string",
+											"translatable": true
+										}
+									},
+									"patternProperties": {
+										"^aria-": {
+											"type": "string"
+										}
+									},
+									"additionalProperties": false
+								}
+							]
+						}
+					}
+				}
+			],
+			"actions": [
+				{
+					"description": "Dispatched when the button is clicked",
+					"label": "Button bare clicked",
+					"name": "NOW_BUTTON_BARE#CLICKED",
+					"payload": []
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": [
+				"now-icon"
+			]
+		},
+		"now-button-circular": {
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core"
+				],
+				"category": "primitives",
+				"description": "An actionable icon in a circular format",
+				"icon": "button-circular",
+				"label": "Button circular"
+			},
+			"properties": [
+				{
+					"defaultValue": "chat-fill",
+					"fieldType": "icon",
+					"label": "Icon",
+					"managed": false,
+					"name": "icon",
+					"readOnly": false,
+					"required": true,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "When true, mutes the button color and disables user interactions",
+					"fieldType": "boolean",
+					"label": "Disabled",
+					"managed": false,
+					"name": "disabled",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "Open chat window",
+					"description": "Text shown inside the tooltip",
+					"fieldType": "string",
+					"label": "Tooltip text",
+					"managed": false,
+					"name": "tooltipContent",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": "{\"aria-label\":\"Chat\"}",
+					"fieldType": "json",
+					"label": "ARIA properties",
+					"managed": false,
+					"name": "configAria",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"oneOf": [
+								{
+									"type": "object",
+									"properties": {
+										"button": {
+											"type": "object",
+											"properties": {
+												"aria-braillelabel": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-brailleroledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-colindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-description": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-label": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-placeholder": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-roledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-rowindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-valuetext": {
+													"type": "string",
+													"translatable": true
+												}
+											},
+											"patternProperties": {
+												"^aria-": {
+													"type": "string"
+												}
+											},
+											"additionalProperties": false
+										}
+									},
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"aria-braillelabel": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-brailleroledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-colindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-description": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-label": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-placeholder": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-roledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-rowindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-valuetext": {
+											"type": "string",
+											"translatable": true
+										}
+									},
+									"patternProperties": {
+										"^aria-": {
+											"type": "string"
+										}
+									},
+									"additionalProperties": false
+								}
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "When true, adds a box shadow to the button",
+					"fieldType": "boolean",
+					"label": "Show shadow",
+					"managed": false,
+					"name": "hasShadow",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				}
+			],
+			"actions": [
+				{
+					"description": "Dispatched when the button is clicked",
+					"label": "Button circular clicked",
+					"name": "NOW_BUTTON_CIRCULAR#CLICKED",
+					"payload": []
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": [
+				"now-icon",
+				"now-tooltip"
+			]
+		},
+		"now-button-iconic": {
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core"
+				],
+				"category": "primitives",
+				"description": "Iconic buttons use an icon instead of text to convey an action",
+				"icon": "button-iconic",
+				"label": "Button iconic"
+			},
+			"properties": [
+				{
+					"defaultValue": "magnifying-glass-outline",
+					"description": "Name of the icon to use in the button",
+					"fieldType": "icon",
+					"label": "Icon",
+					"managed": false,
+					"name": "icon",
+					"readOnly": false,
+					"required": true,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": "secondary",
+					"description": "Color and behavior of the button",
+					"fieldType": "choice",
+					"label": "Variant",
+					"managed": false,
+					"name": "variant",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Primary",
+								"value": "primary"
+							},
+							{
+								"label": "Secondary",
+								"value": "secondary"
+							},
+							{
+								"label": "Tertiary",
+								"value": "tertiary"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"primary",
+								"secondary",
+								"tertiary"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "md",
+					"description": "Size of the button",
+					"fieldType": "choice",
+					"label": "Size",
+					"managed": false,
+					"name": "size",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Small",
+								"value": "sm"
+							},
+							{
+								"label": "Medium",
+								"value": "md"
+							},
+							{
+								"label": "Large",
+								"value": "lg"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"sm",
+								"md",
+								"lg"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Removes the border and sets the default background to be transparent",
+					"fieldType": "boolean",
+					"label": "Bare",
+					"managed": false,
+					"name": "bare",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Disables the button by muting the colors and preventing click interactions",
+					"fieldType": "boolean",
+					"label": "Disabled",
+					"managed": false,
+					"name": "disabled",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Removes padding from the bare button. Note that the button won't align vertically with other buttons",
+					"fieldType": "choice",
+					"label": "Padding",
+					"managed": false,
+					"name": "hidePadding",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Show",
+								"value": false
+							},
+							{
+								"label": "Hide",
+								"value": true
+							}
+						],
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"fieldType": "boolean",
+					"label": "High contrast",
+					"managed": false,
+					"name": "highContrast",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "Enter a label",
+					"description": "Text to display in a tooltip that describes the button's action",
+					"fieldType": "string",
+					"label": "Tooltip text",
+					"managed": false,
+					"name": "tooltipContent",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": "{\"aria-label\":\"Search\"}",
+					"description": "Configures ARIA properties",
+					"fieldType": "json",
+					"label": "ARIA properties",
+					"managed": false,
+					"name": "configAria",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"oneOf": [
+								{
+									"type": "object",
+									"properties": {
+										"button": {
+											"type": "object",
+											"properties": {
+												"aria-braillelabel": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-brailleroledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-colindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-description": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-label": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-placeholder": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-roledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-rowindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-valuetext": {
+													"type": "string",
+													"translatable": true
+												}
+											},
+											"patternProperties": {
+												"^aria-": {
+													"type": "string"
+												}
+											},
+											"additionalProperties": false
+										}
+									},
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"aria-braillelabel": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-brailleroledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-colindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-description": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-label": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-placeholder": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-roledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-rowindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-valuetext": {
+											"type": "string",
+											"translatable": true
+										}
+									},
+									"patternProperties": {
+										"^aria-": {
+											"type": "string"
+										}
+									},
+									"additionalProperties": false
+								}
+							]
+						}
+					}
+				}
+			],
+			"actions": [
+				{
+					"description": "Dispatched when the button is clicked",
+					"label": "Button iconic clicked",
+					"name": "NOW_BUTTON_ICONIC#CLICKED",
+					"payload": []
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": [
+				"now-icon",
+				"now-tooltip"
+			]
+		},
+		"now-button-stateful": {
+			"uiBuilder": {
+				"associatedTypes": [
+					"global.core"
+				],
+				"category": "primitives",
+				"description": "The stateful button is a button used to display an actionable icon. The stateful button doesn't share all the properties of the standard button component. The stateful button only displays an icon and cannot display any other elements, like labels",
+				"icon": "button-stateful",
+				"label": "Button stateful"
+			},
+			"properties": [
+				{
+					"defaultValue": "magnifying-glass-plus-outline",
+					"description": "By default, the `-outline` version of this icon displays, even if the `-fill` version is assigned. The `-fill` version shows if the button is selected by the user",
+					"fieldType": "icon",
+					"label": "Icon",
+					"managed": false,
+					"name": "icon",
+					"readOnly": false,
+					"required": true,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Indicates the selected state of the stateful button. Maps to `aria-pressed` for a toggle button, `aria-checked` for a radio button, and `aria-selected` for a tab",
+					"fieldType": "boolean",
+					"label": "Selected",
+					"managed": true,
+					"name": "selected",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "secondary",
+					"description": "Color and behavior of the button",
+					"fieldType": "choice",
+					"label": "Variant",
+					"managed": false,
+					"name": "variant",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Primary",
+								"value": "primary"
+							},
+							{
+								"label": "Primary-highlighted",
+								"value": "primary-highlighted"
+							},
+							{
+								"label": "Secondary",
+								"value": "secondary"
+							},
+							{
+								"label": "Secondary-highlighted",
+								"value": "secondary-highlighted"
+							},
+							{
+								"label": "Tertiary",
+								"value": "tertiary"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"primary",
+								"primary-highlighted",
+								"secondary",
+								"secondary-highlighted",
+								"tertiary"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "md",
+					"description": "Size of the button",
+					"fieldType": "choice",
+					"label": "Size",
+					"managed": false,
+					"name": "size",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Small",
+								"value": "sm"
+							},
+							{
+								"label": "Medium",
+								"value": "md"
+							},
+							{
+								"label": "Large",
+								"value": "lg"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"sm",
+								"md",
+								"lg"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": "button",
+					"fieldType": "choice",
+					"label": "Config role",
+					"managed": false,
+					"name": "configRole",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Button",
+								"value": "button"
+							},
+							{
+								"label": "Radio",
+								"value": "radio"
+							},
+							{
+								"label": "Tab",
+								"value": "tab"
+							}
+						],
+						"schema": {
+							"type": "string",
+							"enum": [
+								"button",
+								"radio",
+								"tab"
+							]
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Disables the button by muting the colors and preventing click interactions",
+					"fieldType": "boolean",
+					"label": "Disabled",
+					"managed": false,
+					"name": "disabled",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"description": "Removes padding from the bare button. Note that the button won't align vertically with other buttons",
+					"fieldType": "choice",
+					"label": "Padding",
+					"managed": false,
+					"name": "hidePadding",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"choices": [
+							{
+								"label": "Show",
+								"value": false
+							},
+							{
+								"label": "Hide",
+								"value": true
+							}
+						],
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": false,
+					"fieldType": "boolean",
+					"label": "High contrast",
+					"managed": false,
+					"name": "highContrast",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"type": "boolean"
+						}
+					}
+				},
+				{
+					"defaultValue": "Start search",
+					"description": "Text to display in a tooltip when hovering over the button",
+					"fieldType": "string",
+					"label": "Tooltip text",
+					"managed": false,
+					"name": "tooltipContent",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				},
+				{
+					"defaultValue": "{\"aria-label\":\"Search\"}",
+					"description": "Configures ARIA properties",
+					"fieldType": "json",
+					"label": "ARIA properties",
+					"managed": false,
+					"name": "configAria",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"schema": {
+							"oneOf": [
+								{
+									"type": "object",
+									"properties": {
+										"button": {
+											"type": "object",
+											"properties": {
+												"aria-braillelabel": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-brailleroledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-colindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-description": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-label": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-placeholder": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-roledescription": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-rowindextext": {
+													"type": "string",
+													"translatable": true
+												},
+												"aria-valuetext": {
+													"type": "string",
+													"translatable": true
+												}
+											},
+											"patternProperties": {
+												"^aria-": {
+													"type": "string"
+												}
+											},
+											"additionalProperties": {
+												"role": {
+													"type": "string",
+													"enum": [
+														"button",
+														"radio",
+														"tab"
+													]
+												}
+											}
+										}
+									},
+									"additionalProperties": false
+								},
+								{
+									"type": "object",
+									"properties": {
+										"aria-braillelabel": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-brailleroledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-colindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-description": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-label": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-placeholder": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-roledescription": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-rowindextext": {
+											"type": "string",
+											"translatable": true
+										},
+										"aria-valuetext": {
+											"type": "string",
+											"translatable": true
+										}
+									},
+									"patternProperties": {
+										"^aria-": {
+											"type": "string"
+										}
+									},
+									"additionalProperties": false
+								}
+							]
+						}
+					}
+				}
+			],
+			"actions": [
+				{
+					"description": "Dispatched when the user toggles the selected status of the button",
+					"label": "Button stateful selected set",
+					"name": "NOW_BUTTON_STATEFUL#SELECTED_SET",
+					"payload": [
+						{
+							"name": "value",
+							"label": "Value",
+							"fieldType": "boolean",
+							"typeMetadata": {
+								"schema": {
+									"type": "boolean"
+								}
+							}
+						}
+					]
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": [
+				"now-icon",
+				"now-tooltip"
+			]
+		}
+	},
+	"scopeName": "sn_button"
+}

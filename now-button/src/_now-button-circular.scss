@@ -1,0 +1,58 @@
+// ServiceNow Design System
+
+// NOW Button Circular
+
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.now-button-circular {
+	@include now-mx-button;
+	width: now-fn-px2rem(60px);
+	height: now-fn-px2rem(60px);
+	border-width: $now-button-circular--border-width;
+	border-style: solid;
+	border-color: RGB($now-button-circular--border-color);
+	border-radius: 50%;
+	color: RGB($now-button-circular--color);
+	background-color: RGB($now-button-circular--background-color);
+	@include now-mx-focus-ring;
+
+	&:hover {
+		border-color: RGB($now-button-circular--border-color--hover);
+		color: RGB($now-button-circular--color--hover);
+		background-color: RGB($now-button-circular--background-color--hover);
+	}
+
+	&:active {
+		border-color: RGB($now-button-circular--border-color--active);
+		color: RGB($now-button-circular--color--active);
+		background-color: RGB($now-button-circular--background-color--active);
+	}
+
+	// <now-button-circular has-shadow>
+
+	&.has-shadow {
+		box-shadow: $now-global-drop-shadow--lg;
+
+		&:focus {
+			box-shadow: $now-global-drop-shadow--lg, $now-global-focus-ring;
+		}
+	}
+
+	// <now-button-circular disabled>
+	// These are non-standard disabled colors
+
+	&.is-disabled,
+	&.is-disabled:hover {
+		cursor: not-allowed;
+		color: RGBA(
+			$now-button-circular--color--disabled,
+			$now-global-opacity--more
+		);
+		background-color: RGBA($now-button-circular--background-color--disabled);
+	}
+}

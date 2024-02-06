@@ -1,0 +1,216 @@
+<?xml version="1.0"?>
+<unload>
+  <sys_remote_update_set action="INSERT_OR_UPDATE">
+    <application>717535f4a20cb26144e2865dc1ead6d1</application>
+    <application_name>@tenonhq/hello-world</application_name>
+    <application_scope>x_cadso_helloworld</application_scope>
+    <application_version>0.0.1</application_version>
+    <description/>
+    <name>@tenonhq/hello-world_2024-02-06 23:25:03</name>
+    <state>loaded</state>
+    <sys_class_name>sys_remote_update_set</sys_class_name>
+    <sys_id>534d139d99ea4cc014b373c59dc2d0c82249026a</sys_id>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 15:24:59</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 15:24:59</sys_updated_on>
+  </sys_remote_update_set>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <application display_value="@tenonhq/hello-world">717535f4a20cb26144e2865dc1ead6d1</application>
+    <category>customer</category>
+    <name>sys_app_717535f4a20cb26144e2865dc1ead6d1</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<record_update table="sys_app">
+  <sys_app action="INSERT_OR_UPDATE">
+    <name>@tenonhq/hello-world</name>
+    <sys_id>717535f4a20cb26144e2865dc1ead6d1</sys_id>
+    <scope>x_cadso_helloworld</scope>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+    <active>true</active>
+    <can_edit_in_studio>true</can_edit_in_studio>
+    <enforce_license>none</enforce_license>
+    <hide_on_ui>false</hide_on_ui>
+    <installed_as_dependency>false</installed_as_dependency>
+    <js_level>es_latest</js_level>
+    <licensable>true</licensable>
+    <private>false</private>
+    <scoped_administration>false</scoped_administration>
+    <source>x_cadso_helloworld</source>
+    <sys_class_name>sys_app</sys_class_name>
+    <trackable>true</trackable>
+    <uninstall_blocked>false</uninstall_blocked>
+    <version>1.0.0</version>
+  </sys_app>
+</record_update>]]></payload>
+    <remote_update_set>534d139d99ea4cc014b373c59dc2d0c82249026a</remote_update_set>
+    <sys_id>86486b626872ab59b429ecf475f5da661361d459</sys_id>
+    <target_name>@tenonhq/hello-world</target_name>
+    <type>Custom Application</type>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <application display_value="@tenonhq/hello-world">717535f4a20cb26144e2865dc1ead6d1</application>
+    <category>customer</category>
+    <name>sys_ux_lib_source_script_6606cdcb3cd39271bcc2f446be49a629</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+  <sys_ux_lib_source_script action="INSERT_OR_UPDATE">
+    <name>@tenonhq/hello-world</name>
+    <externals/>
+    <inner_components/>
+    <sys_name>@tenonhq/hello-world</sys_name>
+    <sys_id>6606cdcb3cd39271bcc2f446be49a629</sys_id>
+    <sys_package>717535f4a20cb26144e2865dc1ead6d1</sys_package>
+    <sys_scope>717535f4a20cb26144e2865dc1ead6d1</sys_scope>
+    <script><![CDATA[var __TECTONIC__$tenonhq_hello_world=function(e){var n={};function t(r){if(n[r])return n[r].exports;var o=n[r]={i:r,l:!1,exports:{}};return e[r].call(o.exports,o,o.exports,t),o.l=!0,o.exports}return t.m=e,t.c=n,t.d=function(e,n,r){t.o(e,n)||Object.defineProperty(e,n,{enumerable:!0,get:r})},t.r=function(e){"undefined"!=typeof Symbol&&Symbol.toStringTag&&Object.defineProperty(e,Symbol.toStringTag,{value:"Module"}),Object.defineProperty(e,"__esModule",{value:!0})},t.t=function(e,n){if(1&n&&(e=t(e)),8&n)return e;if(4&n&&"object"==typeof e&&e&&e.__esModule)return e;var r=Object.create(null);if(t.r(r),Object.defineProperty(r,"default",{enumerable:!0,value:e}),2&n&&"string"!=typeof e)for(var o in e)t.d(r,o,function(n){return e[n]}.bind(null,o));return r},t.n=function(e){var n=e&&e.__esModule?function(){return e.default}:function(){return e};return t.d(n,"a",n),n},t.o=function(e,n){return Object.prototype.hasOwnProperty.call(e,n)},t.p="",t(t.s=4)}([function(e,n){e.exports=__TECTONIC__$servicenow_ui_renderer_snabbdom},function(e,n){e.exports=__TECTONIC__$servicenow_ui_core},function(e,n){e.exports=__TECTONIC__$tenonhq_hello_world_npm},function(e,n,t){var r=t(5);e.exports="string"==typeof r?r:r.toString()},function(e,n,t){e.exports=t(7)},function(e,n,t){(e.exports=t(6)(!1)).push([e.i,':host{box-sizing:border-box;line-height:var(--now-line-height,1.25);font-family:var(--now-font-family,"Source Sans Pro",sans-serif)}:host([hidden]){display:none}*,:after,:before{box-sizing:border-box}',""])},function(e,n){e.exports=function(e){var n=[];return n.toString=function(){return this.map((function(n){var t=function(e,n){var t=e[1]||"",r=e[3];if(!r)return t;if(n&&"function"==typeof btoa){var o=(u=r,"/*# sourceMappingURL=data:application/json;charset=utf-8;base64,"+btoa(unescape(encodeURIComponent(JSON.stringify(u))))+" */"),i=r.sources.map((function(e){return"/*# sourceURL="+r.sourceRoot+e+" */"}));return[t].concat(i).concat([o]).join("\n")}var u;return[t].join("\n")}(n,e);return n[2]?"@media "+n[2]+"{"+t+"}":t})).join("")},n.i=function(e,t){"string"==typeof e&&(e=[[null,e,""]]);for(var r={},o=0;o<this.length;o++){var i=this[o][0];"number"==typeof i&&(r[i]=!0)}for(o=0;o<e.length;o++){var u=e[o];"number"==typeof u[0]&&r[u[0]]||(t&&!u[2]?u[2]=t:t&&(u[2]="("+u[2]+") and ("+t+")"),n.push(u))}},n}},function(e,n,t){"use strict";t.r(n);var r=t(0),o=t.n(r),i=t(1),u=t(2),a=t.n(u),c=["John","Paul","George","Ringo"];var f=function(){var e,n=(e=c.length,Math.floor(Math.random()*e));return c[n]},l=t(3),s=t.n(l);Object(i.createCustomElement)("cadso-hello-world",{renderer:{type:o.a},view:function(e,n){n.updateState;return Object(r.createElement)("div",null,"Welcome!",Object(r.createElement)(a.a,{text:f()}))},styles:s.a})}]);]]]]><![CDATA[></script>
+    <type>script</type>
+    <exposed_global_name/>
+    <script_link/>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 15:24:59</sys_created_on>
+    <sys_mod_count>474239</sys_mod_count>
+    <sys_policy/>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 15:24:59</sys_updated_on>
+    <engine>18</engine>
+    <component_driver/>
+    <sys_class_name>sys_ux_lib_source_script</sys_class_name>
+    <sys_update_name>sys_ux_lib_source_script_6606cdcb3cd39271bcc2f446be49a629</sys_update_name>
+  </sys_ux_lib_source_script>
+</record_update>]]></payload>
+    <remote_update_set>534d139d99ea4cc014b373c59dc2d0c82249026a</remote_update_set>
+    <sys_id>6606cdcb3cd39271bcc2f446be49a629</sys_id>
+    <target_name>@tenonhq/hello-world</target_name>
+    <type>UX Source Code</type>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <application display_value="@tenonhq/hello-world">717535f4a20cb26144e2865dc1ead6d1</application>
+    <category>customer</category>
+    <name>sys_ux_lib_component_cbe6841fc47c30aa32f44344184e11c4</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+  <sys_ux_lib_component action="INSERT_OR_UPDATE">
+    <required_sys_props/>
+    <required_translation_keys>[]</required_translation_keys>
+    <required_user_prefs/>
+    <source_script_name>@tenonhq/hello-world</source_script_name>
+    <sys_id>cbe6841fc47c30aa32f44344184e11c4</sys_id>
+    <sys_name>cadso-hello-world</sys_name>
+    <sys_package>717535f4a20cb26144e2865dc1ead6d1</sys_package>
+    <sys_scope>717535f4a20cb26144e2865dc1ead6d1</sys_scope>
+    <tag>cadso-hello-world</tag>
+    <source_script/>
+    <iconLabel>list-outline</iconLabel>
+    <specialized>true</specialized>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 15:24:59</sys_created_on>
+    <sys_mod_count>474239</sys_mod_count>
+    <sys_policy/>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 15:24:59</sys_updated_on>
+    <sys_class_name>sys_ux_lib_component</sys_class_name>
+    <sys_update_name>sys_ux_lib_component_cbe6841fc47c30aa32f44344184e11c4</sys_update_name>
+  </sys_ux_lib_component>
+</record_update>]]></payload>
+    <remote_update_set>534d139d99ea4cc014b373c59dc2d0c82249026a</remote_update_set>
+    <sys_id>cbe6841fc47c30aa32f44344184e11c4</sys_id>
+    <target_name>@tenonhq/hello-world</target_name>
+    <type>UX Component Definition</type>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <application display_value="@tenonhq/hello-world">717535f4a20cb26144e2865dc1ead6d1</application>
+    <category>customer</category>
+    <name>sys_ux_macroponent_7d90281be5ecb96d35b1a5efebc1ddef</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+  <sys_ux_macroponent action="INSERT_OR_UPDATE">
+    <name>My Component</name>
+    <props>[]</props>
+    <root_component>cbe6841fc47c30aa32f44344184e11c4</root_component>
+    <root_component_config>{}</root_component_config>
+    <root_component_definition>{"availableSlots":[]}</root_component_definition>
+    <sys_id>7d90281be5ecb96d35b1a5efebc1ddef</sys_id>
+    <sys_name>My Component</sys_name>
+    <sys_package>717535f4a20cb26144e2865dc1ead6d1</sys_package>
+    <sys_scope>717535f4a20cb26144e2865dc1ead6d1</sys_scope>
+    <associated_types>d8899a0473000010f7353c78caf6a750,c1251a89db4c1010793ddf6b5e96199c</associated_types>
+    <category>primitives</category>
+    <dispatched_events/>
+    <handled_events/>
+    <composition>[]</composition>
+    <layout>{}</layout>
+    <schema_version>1.0.0</schema_version>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 15:24:59</sys_created_on>
+    <sys_mod_count>474239</sys_mod_count>
+    <sys_policy/>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 15:24:59</sys_updated_on>
+    <sys_class_name>sys_ux_macroponent</sys_class_name>
+    <sys_update_name>sys_ux_macroponent_7d90281be5ecb96d35b1a5efebc1ddef</sys_update_name>
+  </sys_ux_macroponent>
+</record_update>]]></payload>
+    <remote_update_set>534d139d99ea4cc014b373c59dc2d0c82249026a</remote_update_set>
+    <sys_id>7d90281be5ecb96d35b1a5efebc1ddef</sys_id>
+    <target_name>@tenonhq/hello-world</target_name>
+    <type>UX Macroponent Definition</type>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+  </sys_update_xml>
+  <sys_update_xml action="INSERT_OR_UPDATE">
+    <application display_value="@tenonhq/hello-world">717535f4a20cb26144e2865dc1ead6d1</application>
+    <category>customer</category>
+    <name>sys_uib_toolbox_component_3e9d48d0b431f5e8f4092b254d3b78f4</name>
+    <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<record_update>
+  <sys_uib_toolbox_component action="INSERT_OR_UPDATE">
+    <description>A description of my component</description>
+    <icon>document-outline</icon>
+    <label>My Component</label>
+    <macroponent>7d90281be5ecb96d35b1a5efebc1ddef</macroponent>
+    <internal_component>false</internal_component>
+    <config_layout/>
+    <external_configuration_sources>[]</external_configuration_sources>
+    <sys_id>3e9d48d0b431f5e8f4092b254d3b78f4</sys_id>
+    <sys_name>My Component</sys_name>
+    <sys_package>717535f4a20cb26144e2865dc1ead6d1</sys_package>
+    <sys_scope>717535f4a20cb26144e2865dc1ead6d1</sys_scope>
+    <scripted_config_policy/>
+    <component_config>{}</component_config>
+    <category/>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 15:24:59</sys_created_on>
+    <sys_mod_count>474239</sys_mod_count>
+    <sys_policy/>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 15:24:59</sys_updated_on>
+    <sys_class_name>sys_uib_toolbox_component</sys_class_name>
+    <sys_update_name>sys_uib_toolbox_component_3e9d48d0b431f5e8f4092b254d3b78f4</sys_update_name>
+  </sys_uib_toolbox_component>
+</record_update>]]></payload>
+    <remote_update_set>534d139d99ea4cc014b373c59dc2d0c82249026a</remote_update_set>
+    <sys_id>3e9d48d0b431f5e8f4092b254d3b78f4</sys_id>
+    <target_name>@tenonhq/hello-world</target_name>
+    <type>Builder Component</type>
+    <sys_created_by>tectonic</sys_created_by>
+    <sys_created_on>2024-02-06 23:25:03</sys_created_on>
+    <sys_updated_by>tectonic</sys_updated_by>
+    <sys_updated_on>2024-02-06 23:25:03</sys_updated_on>
+  </sys_update_xml>
+</unload>

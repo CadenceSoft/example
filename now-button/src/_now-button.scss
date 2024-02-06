@@ -1,0 +1,171 @@
+// ServiceNow Design System
+
+// NOW Button
+
+@import '@servicenow/sass-kit/host';
+
+:host {
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.now-button {
+	@include now-mx-button;
+	margin: 0;
+	border-style: solid;
+	border-radius: $now-button--border-radius;
+	font-family: $now-button--font-family;
+	@include now-mx-inherits(
+		$font-style: $now-button--font-style,
+		$font-weight: $now-button--font-weight,
+		$text-transform: $now-button--text-transform,
+		$white-space: $now-button--text-wrap
+	);
+	@include now-mx-focus-ring;
+
+	// <now-button size="sm|md|lg">
+
+	&.-sm {
+		@include now-mx-button-sm;
+		padding-inline-start: calc(
+			#{$now-global-space--sm} * #{$now-button--width-scale}
+		);
+		padding-inline-end: calc(
+			#{$now-global-space--sm} * #{$now-button--width-scale}
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop($now-global-line-height--sm);
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xxs;
+		}
+	}
+
+	&.-md {
+		@include now-mx-button-md;
+		padding-inline-start: calc(
+			#{$now-global-space--lg} * #{$now-button--width-scale}
+		);
+		padding-inline-end: calc(
+			#{$now-global-space--lg} * #{$now-button--width-scale}
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop;
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xxs;
+		}
+	}
+
+	&.-lg {
+		@include now-mx-button-lg;
+		padding-inline-start: calc(
+			#{$now-global-space--xl} * #{$now-button--width-scale}
+		);
+		padding-inline-end: calc(
+			#{$now-global-space--xl} * #{$now-button--width-scale}
+		);
+
+		.now-line-height-crop {
+			@include now-mx-line-height-crop;
+		}
+
+		&:not(.only-icon) .now-button-icon {
+			margin-inline-end: $now-global-space--xs;
+		}
+	}
+
+	// <now-button variant="primary|primary-positive|primary-negative|secondary|secondary-positive|secondary-negative|tertiary">
+
+	&.-primary {
+		@include now-mx-button-primary;
+
+		&.-positive {
+			@include now-mx-button-primary-positive;
+		}
+
+		&.-negative {
+			@include now-mx-button-primary-negative;
+		}
+	}
+
+	&.-secondary {
+		@include now-mx-button-secondary;
+
+		&.-positive {
+			@include now-mx-button-secondary-positive;
+		}
+
+		&.-negative {
+			@include now-mx-button-secondary-negative;
+		}
+	}
+
+	&.-tertiary {
+		@include now-mx-button-tertiary;
+	}
+
+	// <now-button disabled>
+
+	&.is-disabled {
+		border-width: $now-button--border-width--disabled;
+	}
+
+	&.is-disabled,
+	&.is-disabled:hover {
+		@include now-mx-button-is-disabled;
+	}
+
+	// <now-button bare>
+
+	&.is-bare {
+		@include now-mx-button-is-bare;
+
+		&.only-icon:hover {
+			background-color: RGBA($now-color--neutral-9, 0.1);
+		}
+
+		&.only-icon:active {
+			background-color: RGBA($now-color--neutral-9, 0.35);
+		}
+
+		&.-inherit {
+			color: inherit;
+
+			&:hover,
+			&:active {
+				color: inherit;
+			}
+		}
+
+		&.-secondary {
+			@include now-mx-button-bare-secondary;
+		}
+
+		&.-tertiary {
+			color: RGB($now-color--neutral-18);
+
+			&:hover {
+				color: RGB($now-color--secondary-1);
+			}
+
+			&:active {
+				color: RGB($now-color--secondary-3);
+			}
+
+			&.only-icon:hover {
+				color: RGB($now-color--secondary-2);
+			}
+		}
+
+		@include now-mx-button-is-bare-is-disabled;
+	}
+
+	&.only-icon {
+		@include now-mx-button-only-icon;
+	}
+} // end .now-button
