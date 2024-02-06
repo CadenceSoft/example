@@ -1,0 +1,36 @@
+{
+	"components": {
+	    "hello-world-npm": {
+			"uiBuilder": {
+				"associatedTypes": ["global.core", "global.landing-page"],
+				"label": "Hello World NPM",
+				"icon": "icon",
+				"description": "A super cool description of my component",
+				"category": "primitives"
+			},
+			"properties": [
+				{
+					"defaultValue": "Bobby",
+					"description": "Text",
+					"fieldType": "string",
+					"label": "Text",
+					"managed": false,
+					"name": "text",
+					"readOnly": false,
+					"required": false,
+					"selectable": false,
+					"typeMetadata": {
+						"translatable": true,
+						"schema": {
+							"type": "string"
+						}
+					}
+				}
+			],
+			"slots": [],
+			"handlers": [],
+			"innerComponents": []
+	    }
+	},
+	"scopeName": "x_cadso_hw_npm"
+}

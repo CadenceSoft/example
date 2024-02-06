@@ -1,0 +1,70 @@
+{
+  "name": "@tenonhq/hello-world-npm",
+  "version": "0.0.17",
+  "private": false,
+  "description": "./README.md",
+  "keywords": [
+    "ServiceNow",
+    "Now Experience UI Component",
+    "npm-ui-component"
+  ],
+  "engines": {
+    "node": ">=12.22.12",
+    "npm": ">=5.3.0"
+  },
+  "module": "src/index.js",
+  "dependencies": {
+    "@servicenow/behavior-focus": "^19.8.2-ecd",
+    "@servicenow/cli-archetype": "22.0.0",
+    "@servicenow/cli-component-archetype": "22.0.0",
+    "@servicenow/library-enhanced-element": "^19.8.2-ecd",
+    "@servicenow/library-enhanced-utils": "^19.8.2-ecd",
+    "@servicenow/library-schemas": "^19.8.2-ecd",
+    "@servicenow/library-translate": "quebec",
+    "@servicenow/now-icon": "^19.8.2-ecd",
+    "@servicenow/now-tooltip": "^19.8.2-ecd",
+    "@servicenow/sass-kit": "quebec",
+    "@servicenow/sass-theme": "quebec",
+    "@servicenow/ui-core": "quebec",
+    "@servicenow/ui-renderer-snabbdom": "quebec"
+  },
+  "devDependencies": {
+    "@servicenow/cli-archetype-dev": "22.0.0",
+    "@servicenow/cli-component-archetype-dev": "22.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.54.0",
+    "eslint": "^8.35.0",
+    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-standard-with-typescript": "^27.0.1",
+    "eslint-plugin-import": "^2.27.4",
+    "eslint-plugin-n": "^15.6.1",
+    "eslint-plugin-prettier": "^4.2.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.32.0",
+    "prettier": "^2.8.2",
+    "prettier-eslint-cli": "^7.1.0",
+    "prettier-stylelint": "^0.4.2",
+    "stylelint": "^14.16.1",
+    "stylelint-config-standard-scss": "^6.1.0"
+  },
+  "scripts": {
+    "start": "snc ui-component develop --open",
+    "dev": "npm run develop",
+    "develop": "npm run kill && echo 'Successfully Killed Port'; npm start",
+    "kill": "npx kill-port 3000; npx kill-port 8081"
+  },
+  "main": "src/index.js",
+  "directories": {
+    "example": "example",
+    "src": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dman89/example.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dman89/example/issues"
+  },
+  "homepage": "https://github.com/Dman89/example#readme"
+}
