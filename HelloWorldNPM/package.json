@@ -1,6 +1,6 @@
 {
   "name": "@tenonhq/hello-world-npm",
-  "version": "0.0.19",
+  "version": "0.0.27",
   "private": false,
   "description": "./README.md",
   "keywords": [
@@ -53,10 +53,14 @@
     "builder": "4.0.0"
   },
   "scripts": {
-    "start": "snc ui-component develop --open",
-    "dev": "npm run develop",
-    "develop": "npm run kill && echo 'Successfully Killed Port'; npm start",
-    "kill": "npx kill-port 3000; npx kill-port 8081"
+		"merge": "git pull && git merge origin/main",
+		"start": "snc ui-component develop --open",
+		"dev": "npm run develop",
+		"develop": "npm run kill && echo 'Successfully Killed Port'; npm start",
+		"deploy": "snc ui-component deploy --force",
+		"kill": "npx kill-port 3000; npx kill-port 8081",
+		"build": "npm run prepare && builder run build:app:dynamic",
+		"prepare": "[ -f prepare.js ] && node prepare.js || exit 0"
   },
   "main": "src/index.js",
   "directories": {

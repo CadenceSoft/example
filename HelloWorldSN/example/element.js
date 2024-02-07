@@ -1,4 +1,4 @@
-import '../src/cadso-hello-world';
+import '../src';
 
 const el = document.createElement('DIV');
 document.body.appendChild(el);

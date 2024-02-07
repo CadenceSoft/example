@@ -1,18 +1,7 @@
-import { createCustomElement } from "@servicenow/ui-core";
-
-const HelloWorldNPM = ({ text }) => {
-	return (
-		<div className="npm-package-has-been-packaged">
-			Hello World, <bold>{text}</bold>
-		</div>
-	);
-};
-
-createCustomElement("hello-world-npm", {
-	initialState: {
-		text: "Bob",
-	},
-	view: HelloWorldNPM,
-});
-
-export default HelloWorldNPM;
+import './cadso-hello-world-npm';
+const {name, version} = require('../package.json');
+const registry = (window.___TENON_COMPONENTS___ =
+	window.___TENON_COMPONENTS___ || {});
+if (!registry[name]) {
+	registry[name] = version;
+}

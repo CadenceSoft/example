@@ -1,6 +1,6 @@
 {
 	"components": {
-	    "hello-world-npm": {
+	    "cadso-hello-world-npm": {
 			"uiBuilder": {
 				"associatedTypes": ["global.core", "global.landing-page"],
 				"label": "Hello World NPM",

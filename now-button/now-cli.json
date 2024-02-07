@@ -1,5 +1,0 @@
-{
-  "build": {
-    "transpileToEs6": true
-  }
-}

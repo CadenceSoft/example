@@ -1,10 +1,12 @@
 {
 	"components": {
 	    "cadso-hello-world": {
-	        "innerComponents": [],
+	        "innerComponents": [
+				"cadso-hello-world-npm"
+			],
 			"uiBuilder": {
 				"associatedTypes": ["global.core", "global.landing-page"],
-				"label": "My Component",
+				"label": "Hello World",
 				"icon": "document-outline",
 				"description": "A description of my component",
 				"category": "primitives"
