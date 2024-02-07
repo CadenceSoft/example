@@ -24,7 +24,7 @@
 		"@servicenow/tool-enhanced-component-archetype": "19.8.2-ecd",
 		"@servicenow/ui-core": "quebec",
 		"@servicenow/ui-renderer-snabbdom": "quebec",
-		"@tenonhq/hello-world-npm": "0.0.27",
+		"@tenonhq/hello-world-npm": "0.0.29",
 		"@tenonhq/helloworldfn": "^1.0.1"
 	},
 	"devDependencies": {
