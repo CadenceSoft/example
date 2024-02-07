@@ -1,4 +1,4 @@
-You can follow the steps below or if you have access, visit: [Tenon Workshop](https://tenonworkshop.service-now.com/x/cadso/shell/home/1707268321586)
+You can follow the steps below or if you have access, visit: [Tenon Workshop](https://tenonworkshop.service-now.com/x/cadso/shell/home/1707268321586) and look at the console's errors
 
 1. Navigate to the folder "HelloWorldSN"
 
