@@ -1,5 +1,5 @@
 import snabbdom from '@servicenow/ui-renderer-snabbdom';
-import cadsoHelloWorldNpm from "@tenonhq/hello-world-npm";
+import "@tenonhq/hello-world-npm";
 import generate from "@tenonhq/helloworldfn"
 import {createEnhancedElement} from '@servicenow/library-enhanced-element';
 import styles from './styles.scss';
